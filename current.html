@@ -11,7 +11,7 @@
     <nav class="navbar navbar-default" id="nav_bar">
       <div class="container">
         <div class="navbar-header">
-          <a href="#" class="navbar-brand navbar-link weather">
+          <a href="index.html" class="navbar-brand navbar-link weather">
             <img src="images/logo.png" alt="img-responsive" id="logo"><strong>Weather App</strong>
           </a>
           <button class="navbar-toggle collapsed" data-toggle="collaspe" data-target="navcol">
@@ -30,16 +30,18 @@
         </div>
       </div>
     </nav>
-    <div class="row" id="headRow">
-      <div class="col-md-12" id="colText">
-        <h2 class="text-center" id="colHeadText1">The most simplest weather app. It's very simple.</h2>
-        <h2 class="text-center" id="colHeadText2">Get weather information of any city.</h2>
-        <ul class="list-inline" id="list_item">
-          <li>Temperature</li>
-          <li>Pressure</li>
-          <li>Windspeed</li>
-          <li>Humidity</li>
-        </ul>
+    <div class="jumbotron">
+      <h2 class="text-center" style="font-size:50px; font-weight:600;">Get Current Weather Information</h2>
+    </div>
+    <div class="container">
+      <div class="row" id="cityDiv">
+        <div class="col-md-12">
+          <h3 class="text-center text-primary">Enter City Name</h3>
+        </div>
+        <div class="row form-group">
+          <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+        </div>
+        <button id="submitCity" class="btn btn-primary">Search City</button>
       </div>
     </div>
     <!-- jQuery library -->
